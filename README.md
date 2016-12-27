@@ -1,2 +1,3 @@
-# WorkshopInOffice
-Repository of sample codes and projects for workshops in/out-of the office.
+# MyWorkshops
+
+勉強会やハンズオンのために作成したサンプル・コードやサンプル・プロジェクトのGitリポジトリです。
