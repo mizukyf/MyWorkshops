@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<div class="container">
+		<header class="page-header">
+			<h1>TODO - List</h1>
+		</header>
+		
+		<article>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-lg-6">
+							<h2 class="panel-title">Task List</h2>
+						</div>
+						<div class="col-lg-6" style="text-align: right;">
+							<a class="btn btn-success" href="#" ng-href="#/new" title="追加">
+								<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th width="50">#</th>
+							<th>Title</th>
+							<th width="80">Priority</th>
+							<th width="50">Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- テンプレート -->
+						<tr class="task-item" ng-repeat="task in list">
+							<td class="task-id">{{task.id}}</td>
+							<td class="task-title">{{task.title}}</td>
+							<td class="task-priority">
+								<span class="label" ng-class="{'label-danger': task.priority == 1, 'label-warning': task.priority == 2, 'label-info': task.priority == 3}">
+									{{priorityLabel(task.priority)}}
+								</span>
+							</td>
+							<td class="task-action">
+								<button type="button" class="btn btn-danger" ng-click="minusClicked(task.id)">
+									<span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</article>
+	</div>
+</body>
+</html>

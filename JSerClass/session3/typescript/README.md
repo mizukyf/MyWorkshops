@@ -1,0 +1,2 @@
+# jserclass3ts
+JavaScript勉強会のためのサンプルコード 第3回分 TypeScript利用アプリ

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<div class="container">
+		<header class="page-header">
+			<h1>TODO - New</h1>
+		</header>
+		
+		<article>
+			<form method="post" name="taskForm" ng-submit="formSubmitted()">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						新しいタスク
+					</div>
+					<table class="table">
+						<tr>
+							<th>タイトル</th>
+							<td style="width: 75%;">
+								<input type="text" class="form-control" required="required" ng-model="task.title" />
+							</td>
+						</tr>
+						<tr>
+							<th>優先度</th>
+							<td>
+								<div class="btn-group">
+									<label class="btn btn-primary" ng-model="task.priority" uib-btn-radio="1">High</label>
+									<label class="btn btn-primary" ng-model="task.priority" uib-btn-radio="2">Middle</label>
+									<label class="btn btn-primary" ng-model="task.priority" uib-btn-radio="3">Low</label>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-6">
+							</div><!-- /.col-lg-N -->
+							<div class="col-lg-6" style="text-align: right;">
+								<a class="btn btn-default" role="button" href="#" ng-href="#/new">キャンセル</a>
+								<button class="btn btn-primary" type="submit" ng-disabled="taskForm.$invalid">OK</button>
+							</div><!-- /.col-lg-N -->
+						</div><!-- /.row -->
+					</div>
+				</div>
+			</form>
+		</article>
+	</div>
+</body>
+</html>
