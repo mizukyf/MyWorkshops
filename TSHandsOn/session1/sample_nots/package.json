@@ -1,0 +1,26 @@
+{
+  "name": "tshandson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^2.0.39",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-typescript": "^3.1.4",
+    "gulp-uglify": "^2.0.1",
+    "merge-stream": "^1.0.1",
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {
+    "es6-promise": "^4.0.5",
+    "jquery": "^3.1.1",
+    "requirejs": "^2.3.2"
+  }
+}
